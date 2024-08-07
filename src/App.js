@@ -16,18 +16,17 @@ const Technology = lazy(()=>import('./Components/Technology'))
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
+      <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/finance" element={<Finance/>} />
           <Route path="/Logistics" element={<Logistics/>} />
           <Route path="/Technology" element = {<Technology/>}/>
         </Routes>
       </Suspense>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }
-
 export default App;
