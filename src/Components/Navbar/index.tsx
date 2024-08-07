@@ -32,12 +32,10 @@ const Navbar = () => {
   return (
     <>
       <AppBar
-        sx={{ display: "flex", position: "relative", bgcolor: "#000033" }}
+        sx={{ display: "flex", bgcolor:'transparent', width:'fit-screen',  backdropFilter: 'blur(10px)' }}
       >
         <Toolbar
           sx={{
-            width: "Hug (1,433px)",
-            height: "Hug (56px)",
             display: "flex",
             justifyContent: "space-between",
             marginLeft: "40px",
@@ -45,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <Link
-            href="https://www.facebook.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,6 +53,7 @@ const Navbar = () => {
               alt="ZeddLabz"
               width={"162px"}
               height={"56px"}
+              sx={{filter: 'brightness(2.5) contrast(1.8)'}}
             />
           </Link>
           <Box sx={{ display: "flex", gap: 6 }}>

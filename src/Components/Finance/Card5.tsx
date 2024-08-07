@@ -2,8 +2,8 @@ import React from "react";
 import img13 from "../../assets/img13.svg";
 const Card5 = () => {
   return (
-    <div className="flex flex-col md:flex-row px-16 max-md:px-5 bg-[#BCBCBC]">
-      <div className="flex flex-col md:flex-row gap-5 justify-between items-center w-full max-md:max-w-full">
+    <div className="flex flex-col md:flex-row px-44 max-md:px-5 bg-[#BCBCBC]">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full max-md:max-w-full">
         <div className="flex flex-col self-stretch pt-12 my-auto rounded-xl max-w-[1384px] min-w-[240px] w-[692px] max-md:max-w-full">
           <div className="flex flex-col pr-3 max-md:max-w-full">
             <div className="flex flex-col max-w-full w-[703px]">

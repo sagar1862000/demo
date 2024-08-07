@@ -3,7 +3,7 @@ import img14 from "../../assets/img14.svg";
 const Card4 = () => {
   return (
     <div className="flex flex-col bg-slate-900">
-      <div className="flex flex-col justify-center items-center px-12 py-16 w-full max-md:px-5 max-md:py-24 max-md:max-w-full">
+      <div className="flex flex-col justify-center items-center py-16 w-full max-md:px-5 max-md:py-24 max-md:max-w-full">
         <div className=" w-full max-w-[1342px]  max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             <div className="flex flex-col w-[46%] max-md:ml-0 max-md:w-full">

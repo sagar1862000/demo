@@ -25,7 +25,7 @@ const Footer = () => {
         display={"flex"}
         justifyContent={'space-around'}
         width={"100%"}
-        sx={{ marginBottom: "20px" }}
+        sx={{ marginBottom: "20px" ,marginTop:'40px' }}
         gap={72}
       >
         <Link
@@ -122,8 +122,9 @@ const Footer = () => {
                     fontWeight: "500",
                     fontSize: "24px",
                     alignItems: "center",
-                    lineHeight: "28.8px",
+                    lineHeight: "40px",
                     marginBottom: "10px",
+                    marginTop:'30px'
                   }}
                   variant={isMobile ? "h6" : "h5"}
                 >
@@ -138,7 +139,7 @@ const Footer = () => {
                       fontWeight: "400",
                       fontSize: "24px",
                       alignItems: "center",
-                      lineHeight: "28.8px",
+                      lineHeight: "40px",
                     }}
                   >
                     <Link href="#" color="inherit" underline="none">

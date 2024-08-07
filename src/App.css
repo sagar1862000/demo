@@ -54,3 +54,10 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+/* .bg-gradient-text {
+  background: linear-gradient(to right,#9795FF, #FFFFFF, #BE9FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */

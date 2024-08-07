@@ -3,12 +3,12 @@ import img9 from "../../assets/img9.svg";
 const Card1 = () => {
   return (
     <div
-      className="relative bg-cover bg-center place-content-center md:h-[500px]"
+      className="relative bg-cover bg-center place-content-center md:h-[700px]"
       style={{ backgroundImage: `url(${img9})` }}
     >
-      <div className="relative z-10 text-white p-6 grid md:h-[500px] ">
-        <div className="text-sm text-blue-300">Industries / Finance</div>
-        <hr className="font-extrabold border-t-2 border-white w-full md:w-3/4 md:mt-[-20px]  lg:mt-[-35px]" />
+      <div className="relative  text-white p-6 grid md:h-[500px] ">
+        <div className=" text-[#5498FE] text-5xl  ">Industries / Finance</div>
+        <hr className="font-extrabold border-t-2 md:mt-[-24px]  pt-16  border-white w-full md:w-3/4 " />
           <h1 className="text-12xl font-bold text-center flex-col items-center justify-self-center justify-center w-3/4 md:text-35xl ">
             Unlocking Financial Efficiency Through Technology
           </h1>

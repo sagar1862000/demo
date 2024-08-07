@@ -7,12 +7,12 @@ const Card2 = () => {
         <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full mt-16 mx-2  ">
           <div className="flex flex-col items-start w-full text-stone-300 max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-col ml-3.5 max-w-full text-6xl font-bold leading-tight tracking-[2.25px] w-[330px] max-md:ml-2.5 max-md:text-4xl">
-              <div className="text-4xl md:text-13xl font-poppins font-extrabold">
+              <div className="text-4xl md:text-31xl md:ml-12 font-poppins font-[#BCBCBC]">
                 OUR VIEW
               </div>
             </div>
 
-            <div className=" flex flex-col items-start self-end mt-2 py-8 text-xl font-semibold leading-loose ">
+            <div className=" flex flex-col items-start self-center mt-2 py-8 text-xl font-semibold leading-loose ">
               <div className="mb-2 text-2xl md:text-13xl">Challenges</div>
               <div>Customer experience</div>
               <div className="">New fintech market entrants</div>

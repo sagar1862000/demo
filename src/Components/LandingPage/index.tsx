@@ -8,9 +8,11 @@ import Card6 from './Card6'
 import { Card7 } from "./Card7";
 import Card8 from "./Card8";
 import { Card9 } from "./Card9";
+import Card1 from "./Card1";
 const LandingPage = () => {
   return (
     <>
+    <Card1/>
     <Card3/>
     <Card4/>
     <Card5/>

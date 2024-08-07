@@ -1,18 +1,53 @@
-import React from 'react'
-import img15 from '../../assets/img15.svg'
+import React, { useEffect, useState } from "react";
+import img15 from "../../assets/img15.svg";
+import img16 from "../../assets/img16.svg";
+import img17 from "../../assets/img17.svg";
+import img18 from "../../assets/img18.svg";
+import img19 from "../../assets/img19.svg";
+import { Box } from "@mui/material";
 
 const Card6 = () => {
-  return (
-    <div className="flex flex-col bg-slate-900">
-    <div className="flex flex-col justify-center items-center px-20 py-12 w-full max-md:px-5 max-md:max-w-full">
-      <img
-        loading="lazy"
-        srcSet={img15}
-        className="object-contain w-full rounded-xl aspect-[1.78] max-w-[1260px] max-md:max-w-full"
-      />
-    </div>
-  </div>
-  )
-}
+  const [img, setImg] = useState(0);
+  const Images = [img15, img19, img16, img17, img18];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImg((prevSlide) => (prevSlide + 1) % Images.length);
+    }, 3000);
 
-export default Card6
+    return () => clearInterval(interval);
+  }, []);
+  return (
+    <Box className="relative w-full h-[800px] overflow-hidden">
+    <Box
+      className="absolute inset-0 flex"
+      sx={{
+        display: 'flex',
+        width: '100%',
+        height: '100%',
+        transition: 'opacity 1s ease-in-out',
+      }}
+    >
+      {Images.map((slide, index) => (
+        <Box
+          key={index}
+          component="img"
+          src={slide}
+          alt={`Slide ${index + 1}`}
+          sx = {{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            transition: 'opacity 1s ease-in-out',
+            opacity: img === index ? 1 : 0,
+          }}
+        />
+      ))}
+    </Box>
+  </Box>
+  );
+};
+
+export default Card6;

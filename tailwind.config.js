@@ -50,6 +50,9 @@ module.exports = {
         lato: "Lato",
         inter: "Inter",
         roboto: "Roboto",
+        Rubik:'Rubik',
+        Krub:'Krub',
+        Poppins:'Poppins',
         "plus-jakarta-sans": "'Plus Jakarta Sans'",
       },
       borderRadius: {
@@ -116,4 +119,8 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // ...
+  ],
 };
